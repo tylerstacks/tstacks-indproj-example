@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      JavaScript 6th Edition  v 1.16
+     
+
+      Individual Project Template
+  
+      Author: Tyler Stacks
+      Date: February 13, 2017   
+
+      Filename: order.html
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+   <title>Individual Student Project Template 1</title> 
+   <link rel="stylesheet" href="project.css" />
+   <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto" rel="stylesheet">
+</head>
+
+<body>
+   <div id="container">
+      <header>
+         <h1>
+            Paracusic Pedals
+         </h1>
+      </header>
+
+      <nav>
+         <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/products.html">Products</a></li>
+            <li id="currentpage"><a href="#">Order</a></li>
+            <li><a href="/about.html">About</a></li>  
+        </ul>  
+      </nav>
+        
+      <article>
+         <h2>Order</h2>
+         <!--
+          This is the checkbox form. Each item is labeled, assigned their numerical value, and given an id name. The ids are recalled in the javascript file.
+        -->
+        <form>
+          <input type="checkbox" id="item1" value="70" />
+          <label for="item1">Pelusa Fuzz Pedal ($70)</label><br /><br />
+          <input type="checkbox" id="item2" value="75" />
+          <label for="item2">Restrar Delay Pedal($75)</label><br /><br />
+          <input type="checkbox" id="item3" value="80" />
+          <label for="item3">Marcha Overdrive Pedal($80)</label><br /><br />
+          <input type="checkbox" id="item4" value="80" />
+          <label for="item4">Toro Boost Pedal ($80)</label><br /><br />
+          <input type="button" value="Submit" id="sButton" />
+        </form>
+        <!--
+          The paragraphs below are where the document.getElementById are displayed. Each one is given an id corresponding to what is used in the javascript.
+        -->
+        <p id="subtotal"></p>
+        <p id="tax"></p>
+        <p id="total"></p>
+      </article>
+    
+      <footer>
+         <p>Paracusic Pedals &bull; Salisbury, Maryland</p>
+      </footer>
+   </div>
+  <script src="script.js"></script>
+</body>
+</html>
