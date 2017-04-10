@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      JavaScript 6th Edition  v 1.16
+     
+
+      Individual Project Template
+  
+      Author: Tyler Stacks
+      Date:  February 13, 2017  
+
+      Filename: artists.html
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+   <title>Individual Student Project Template 1</title>
+   <link rel="stylesheet" href="project.css" />
+   <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto" rel="stylesheet">
+</head>
+
+<body>
+   <div id="container">
+      <header>
+         <h1>
+            Paracusic Pedals
+         </h1>
+      </header>
+
+      <nav>
+         <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/products.html">Products</a></li>
+          <li><a href="/order.html">Order</a></li>
+          <li id="currentpage"><a href="#">About</a></li>     
+        </ul>
+      </nav>
+        
+      <article> <!-- these are the four paragraphs that the script will cycle through with getElementsByTagName -->
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+  
+       <script>
+         "use strict";
+         document.getElementsByTagName("p")[0].innerHTML = "Web browser name: " + navigator.appName;
+         document.getElementsByTagName("p")[1].innerHTML = "Web browser version: " + navigator.appVersion;
+         document.getElementsByTagName("p")[2].innerHTML = "Operating Platform: " + navigator.platform;
+         document.getElementsByTagName("p")[3].innerHTML = "User agent: " + navigator.userAgent;
+       </script>
+     </article>
+    
+     <footer>
+       <p>Paracusic Pedals &bull; Salisbury, Maryland</p>
+     </footer>
+   </div>
+</body>
+</html>

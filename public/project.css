@@ -1,0 +1,249 @@
+/*  JavaScript 6th Edition v 1.16
+ 
+    Large format style sheet
+
+    Filename: project.css
+*/
+
+/* apply a natural box layout model to all elements */
+* {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+/* reset rules */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+   display: block;
+}
+
+/* Changed the base font to Roboto and the background color to the dark gray seen at the bottom */
+body {
+   line-height: 1;
+   width: 100%;
+   background: #3A3333;
+   margin: 0 auto;
+   font-family: 'Roboto', sans-serif;  
+   position: relative;
+}
+
+ol, ul {
+   list-style: none;
+}
+
+blockquote, q {
+   quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+   content: '';
+   content: none;
+}
+
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+
+a:hover {
+   text-decoration: underline;
+   color: inherit;
+}
+
+a:active {
+   text-decoration: none;
+   color: inherit;
+}
+
+/* container - Changed the background color that is seen in the margins of the main article */
+#container {
+   background: #E5EEC1;
+}
+
+/* page header - Made the header stretch fully across the page and changed the background color */
+header {
+   background: #547a82;
+   padding: 50px;
+   width: 100%;
+}
+
+/* Changed the color, size, weight, and type of font */
+header h1 {
+   font-size: 75px;
+   text-align: center;
+   font-family: 'Oswald', sans-serif;
+   font-weight: bold;
+   color: white;
+}
+
+/* navigation - Made it stretch across the page, centered it, placed it on its own line, and changed the font and color */
+nav {
+   font-size: 20px;
+   float: center;
+   color: #3eaca8;
+   text-align: center;
+   weight: 100%;
+   background: #3eaca8;
+   font-family: 'Oswald', sans-serif;
+}
+
+nav ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+}
+
+nav ul li {
+   display: inline-block;
+}
+
+nav ul li a {
+   display: block;
+   color: #3A3333;
+   text-align: right;
+   padding: 20px;
+   text-decoration: none;
+}
+
+/* Made it so when hovered over the color changes */
+nav ul li a:hover {
+   background-color: #e5eec1;
+}
+
+/*changes the color of the nav bar for the current page*/
+#currentpage{ 
+   background-color: #E5EEC1;
+}
+
+
+/* main content */
+article {
+   text-align: center;
+   background: white;
+   padding: 2%;
+   margin: 0% 5% 0% 5%;
+   color: #3A3333;
+}
+
+/* Changed the type, weight, and alignment of the header */
+article h2 {
+   font-family: 'Oswald', sans-serif;
+   font-size: 30px;
+   font-weight: bold;
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+/* Inserted margins on the side of the main text */
+article p {
+   margin-bottom: 15px;
+   margin-top: 15px;
+   line-height: 1.2em;
+}
+
+article table {
+   margin: 0 auto;
+}
+
+article th, article td {
+   border: 1px solid black;
+   border-collapse: collapse;
+   padding: 5px;
+}
+
+article th {
+   font-weight: bold;
+   background: #EFE0B9;
+}
+
+/* Added a padding around the images */
+article img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    display: inline-block;
+}
+
+article ul li {
+  font-weight: bold;
+  padding: 1px;
+}
+
+/* form */
+form {
+  float: center; 
+  display: inline-block;
+}
+
+form fieldset{
+}
+
+form legend {
+
+}
+
+form legend span {
+}
+
+form label {
+  
+}
+
+form label p {
+  
+}
+
+form input {
+}
+
+/* sidebar */
+aside {
+   float: left;
+   color: #EFE0B9;
+   top: 190px;
+   padding: 30px;
+}
+
+aside #estimate {
+   font-weight: bold;
+}
+
+/* footer - Changed the background color */
+footer {
+   background: #3A3333;
+   width: 100%;
+   clear: both;
+   font-size: 14px;
+   padding: 10px;
+   color: white;
+}
+
+footer p {
+   text-align: center;
+}
+
